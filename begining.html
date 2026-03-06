@@ -18,74 +18,199 @@
 <html lang="en" class="scroll-smooth"></html>
 <body class="bg-[#0a0a0b] text-gray-200">
 
-  <!-- Navbar -->
-  <nav class="bg-[#121214]/80 backdrop-blur-md fixed w-full top-0 z-50 border-b border-gray-800">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-amber-400 tracking-tight">
-        Tirta<span class="text-gray-100">Yudha</span>
-      </h1>
-      <ul class="hidden md:flex space-x-6 font-medium">
-        <li><a href="#about" class="hover:text-amber-400 transition">About</a></li>
-        <li><a href="#skills" class="hover:text-amber-400 transition">Skills</a></li>
-        <li><a href="#projects" class="hover:text-amber-400 transition">Projects</a></li>
-        <li><a href="#certificates" class="hover:text-amber-400 transition">Certificates</a></li>
-        <li><a href="#contact" class="hover:text-amber-400 transition">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+  <!-- ======================= Navbar ======================= -->
+<nav class="fixed top-0 w-full z-50 bg-[#0a0a0b]/80 backdrop-blur-md border-b border-gray-800">
+
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+    <!-- Logo -->
+    <h1 class="text-xl md:text-2xl font-bold tracking-wide">
+      <span class="text-amber-400">Tirta</span>
+      <span class="text-gray-200">Yudha</span>
+      <span class="text-amber-400">Wibowo</span>
+    </h1>
+
+    <!-- Menu -->
+    <ul class="hidden md:flex items-center gap-8 text-gray-300 font-medium">
+
+      <li>
+        <a href="#about"
+          class="relative hover:text-amber-400 transition duration-300
+          after:content-[''] after:block after:w-0 after:h-[2px] after:bg-amber-400
+          after:transition-all after:duration-300 hover:after:w-full">
+          About
+        </a>
+      </li>
+
+      <li>
+        <a href="#skills"
+          class="relative hover:text-amber-400 transition duration-300
+          after:content-[''] after:block after:w-0 after:h-[2px] after:bg-amber-400
+          after:transition-all after:duration-300 hover:after:w-full">
+          Skills
+        </a>
+      </li>
+
+      <li>
+        <a href="#projects"
+          class="relative hover:text-amber-400 transition duration-300
+          after:content-[''] after:block after:w-0 after:h-[2px] after:bg-amber-400
+          after:transition-all after:duration-300 hover:after:w-full">
+          Projects
+        </a>
+      </li>
+
+      <li>
+        <a href="#certificates"
+          class="relative hover:text-amber-400 transition duration-300
+          after:content-[''] after:block after:w-0 after:h-[2px] after:bg-amber-400
+          after:transition-all after:duration-300 hover:after:w-full">
+          Certificates
+        </a>
+      </li>
+
+      <li>
+        <a href="#contact"
+          class="relative hover:text-amber-400 transition duration-300
+          after:content-[''] after:block after:w-0 after:h-[2px] after:bg-amber-400
+          after:transition-all after:duration-300 hover:after:w-full">
+          Contact
+        </a>
+      </li>
+
+      <!-- Resume Button -->
+      <li>
+        <a href="/assets/Tirta-Yudha-Wibowo-CV.pdf"
+          target="_blank"
+          class="ml-2 px-4 py-2 rounded-lg bg-amber-400 text-black font-semibold
+          hover:bg-amber-300 transition duration-300 shadow-md">
+          Resume
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
   <!-- Hero Section -->
-  <section class="min-h-screen flex flex-col justify-center items-center text-center pt-24 bg-gradient-to-b from-[#121214] to-[#0a0a0b]">
-    <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-100">
-      Hi, I'm <span class="text-amber-400">Tirta Yudha</span>
-    </h2>
-    <p class="text-gray-300 text-lg max-w-2xl mx-auto">
-        <span class="text-gray-200 font-bold">Web Developer & UI/UX Designer</span> passionate about crafting seamless, modern, and visually engaging web experiences that blend functionality with aesthetic design.
-      </p>
-           
-    <a href="#projects" class="bg-amber-400 text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-amber-300 transition">
-      View My Work
-    </a>
-  </section>
+<section class="min-h-screen flex items-center justify-center text-center pt-24 
+bg-gradient-to-b from-[#121214] via-[#0d0d0f] to-[#0a0a0b] relative overflow-hidden">
 
-  <!-- About -->
-  <section id="about" class="py-20 bg-[#121214] border-t border-gray-800">
-    <section id="about" class="py-20 bg-[#0a0a0b] text-gray-400">
-      <div class="max-w-5xl mx-auto px-6 md:px-12 lg:px-20">
-        <h3 class="text-3xl font-semibold text-amber-400 mb-6 text-left">About Me</h3>
-          <!-- Foto Portfolio -->
-          <div class="w-full md:w-1/3 flex justify-center md:justify-start">
-            <img 
-              src="/assets/profile.png" 
-              alt="Portfolio Photo" 
-              class="rounded-full shadow-lg w-60 h-60 object-cover object-top border-2 border-amber-400 hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-          <p class="text-gray-400 leading-relaxed text-left">
-            A <span class="text-gray-200 font-medium">Bachelor of Informatics</span> graduate from 
-            <span class="text-gray-200 font-medium">Gunadarma University</span> specializing in 
-            <span class="text-gray-200 font-medium">Web Development</span> and 
-            <span class="text-gray-200 font-medium">UI/UX Design</span>.  
-            I have hands-on experience as a <span class="text-gray-200 font-medium">Full Stack Developer</span> and 
-            <span class="text-gray-200 font-medium">Interface Designer</span> during my professional internship at 
-            <span class="text-gray-200 font-medium">PT Mitra Talenta Group</span> (MSIB Batch 6).  
-            Additionally, I actively contribute as an <span class="text-gray-200 font-medium">iLab Gunadarma Assistant</span>, 
-            managing data systems, providing helpdesk support, and producing digital content.  
-      
-            These experiences reflect my strong technical foundation, effective communication, and collaborative mindset.  
-            As a developer, I am passionate about building 
-            <span class="text-gray-200 font-medium">responsive</span>, 
-            <span class="text-gray-200 font-medium">accessible</span>, and 
-            <span class="text-gray-200 font-medium">aesthetically refined</span> digital experiences.  
-            Skilled in <span class="text-gray-200 font-medium">React.js</span>, 
-            <span class="text-gray-200 font-medium">Tailwind CSS</span>, and 
-            <span class="text-gray-200 font-medium">Node.js</span>,  
-            I strive to blend elegant design with functional and maintainable code.
-          </p>
+  <!-- Background Glow -->
+  <div class="absolute w-[400px] h-[400px] bg-amber-400/10 blur-3xl rounded-full top-20 left-10"></div>
+  <div class="absolute w-[300px] h-[300px] bg-purple-500/10 blur-3xl rounded-full bottom-20 right-10"></div>
+
+  <div class="max-w-3xl mx-auto px-6 relative z-10">
+
+    <!-- Small Intro -->
+    <p class="text-amber-400 text-sm tracking-widest uppercase mb-4">
+      Portfolio
+    </p>
+
+    <!-- Name -->
+    <h2 class="text-4xl md:text-6xl font-bold mb-6 text-gray-100 leading-tight">
+      Hi, I'm 
+      <span class="text-amber-400">Tirta Yudha</span>
+      <span class="text-gray-200">Wibowo</span>
+    </h2>
+
+    <!-- Description -->
+    <p class="text-gray-300 text-lg leading-relaxed mb-8">
+      <span class="text-gray-100 font-semibold">
+        Fullstack Developer • Web Developer • UI/UX Designer
+      </span>
+      <br>
+      Passionate about building modern, scalable, and visually engaging
+      digital experiences that combine clean code with thoughtful design.
+    </p>
+
+    <!-- Buttons -->
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+
+      <a href="#projects"
+        class="bg-amber-400 text-gray-900 font-semibold px-8 py-3 rounded-full
+        hover:bg-amber-300 transition duration-300 shadow-lg shadow-amber-400/20">
+        View My Work
+      </a>
+
+      <a href="#contact"
+        class="border border-gray-600 text-gray-200 px-8 py-3 rounded-full
+        hover:border-amber-400 hover:text-amber-400 transition duration-300">
+        Contact Me
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- ======================= About Section ======================= -->
+<section id="about" class="py-20 bg-[#0a0a0b] border-t border-gray-800">
+
+  <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
+
+    <!-- Title -->
+    <h2 class="text-3xl font-semibold text-amber-400 mb-12">
+      About Me
+    </h2>
+
+    <div class="flex flex-col md:flex-row items-center gap-12">
+
+      <!-- Profile Photo -->
+      <div class="w-full md:w-1/3 flex justify-center">
+        <img
+          src="/assets/profile.png"
+          alt="Profile Photo"
+          class="w-64 h-64 object-cover object-top rounded-full border-2 border-amber-400 shadow-lg hover:scale-105 transition duration-300"
+        />
+      </div>
+
+      <!-- About Text -->
+      <div class="md:w-2/3 text-gray-400 leading-relaxed">
+
+        <p class="mb-4">
+          I am a <span class="text-gray-200 font-medium">Bachelor of Informatics graduate</span> from 
+          <span class="text-gray-200 font-medium">Gunadarma University</span> with a strong interest in 
+          <span class="text-gray-200 font-medium">Fullstack Developer / Web Developer </span> and 
+          <span class="text-gray-200 font-medium">UI/UX Design</span>.
+        </p>
+
+        <p class="mb-4">
+          During my internship at 
+          <span class="text-gray-200 font-medium">PT Mitra Talenta Group</span> (MSIB Batch 6), 
+          I worked as a <span class="text-gray-200 font-medium">Full Stack Developer</span> and 
+          <span class="text-gray-200 font-medium">Interface Designer</span>, 
+          developing responsive web applications and improving user interface experiences.
+        </p>
+
+        <p class="mb-6">
+          I also contribute as an 
+          <span class="text-gray-200 font-medium">iLab Assistant at Gunadarma University</span>, 
+          supporting system operations, handling data management, and assisting users through helpdesk services.
+        </p>
+
+        <!-- Tech Stack Highlight -->
+        <div class="flex flex-wrap gap-3 mt-4">
+          <span class="px-3 py-1 bg-[#1a1a1c] border border-gray-800 rounded-full text-sm hover:border-amber-400 transition">
+            React.js
+          </span>
+          <span class="px-3 py-1 bg-[#1a1a1c] border border-gray-800 rounded-full text-sm hover:border-amber-400 transition">
+            JavaScript
+          </span>
+          <span class="px-3 py-1 bg-[#1a1a1c] border border-gray-800 rounded-full text-sm hover:border-amber-400 transition">
+            Tailwind CSS
+          </span>
+          <span class="px-3 py-1 bg-[#1a1a1c] border border-gray-800 rounded-full text-sm hover:border-amber-400 transition">
+            Node.js
+          </span>
+          <span class="px-3 py-1 bg-[#1a1a1c] border border-gray-800 rounded-full text-sm hover:border-amber-400 transition">
+            MySQL
+          </span>
+          <span class="px-3 py-1 bg-[#1a1a1c] border border-gray-800 rounded-full text-sm hover:border-amber-400 transition">
+            UI/UX Design
+          </span>
         </div>
-      </section>
-      
-  </section>
+      </div>
+    </div>
+  </div>
+</section>  
 
   <!-- Skills -->
   <section id="skills" class="py-20 bg-[#0a0a0b]">
@@ -175,67 +300,477 @@
 
   <!-- ======================= Certificates Section ======================= -->
 <section id="certificates" class="py-20 bg-[#0a0a0b] border-t border-gray-800">
-    <div class="max-w-5xl mx-auto px-4 text-center">
-      <h3 class="text-3xl font-semibold text-amber-400 mb-10">Certificates</h3>
-      
-      <ol class="space-y-4 text-left max-w-3xl mx-auto">
-        <li>
-          <a href="https://drive.google.com/file/d/1qjC-B0QNBofWfjOdhOKyl7ZXicqSo8-w/view?usp=sharing" target="_blank" 
-             class="block bg-[#1a1a1c] p-4 rounded-lg border border-gray-800 hover:border-amber-400/40 hover:bg-[#1f1f22] transition">
-            <h3 class="text-lg font-medium text-gray-200">Occupation Of Junior Web Programmer</h3>
-          </a>
-        </li>
-        <li>
-          <a href="https://drive.google.com/file/d/1FRsltJwuELL9410Ubvc-Ji6bK9Qybepm/view" target="_blank" 
-             class="block bg-[#1a1a1c] p-4 rounded-lg border border-gray-800 hover:border-amber-400/40 hover:bg-[#1f1f22] transition">
-            <h3 class="text-lg font-medium text-gray-200">Graphic Designer UI/UX Design</h3>
-          </a>
-        </li>
-        <li>
-          <a href="https://drive.google.com/file/d/18hHwIzZP3yibOcCd8TVqmtTwwXPKuIxx/view" target="_blank"
-             class="block bg-[#1a1a1c] p-4 rounded-lg border border-gray-800 hover:border-amber-400/40 hover:bg-[#1f1f22] transition">
-            <h3 class="text-lg font-medium text-gray-200">Workshop JavaScript</h3>
-          </a>
-        </li>
-        <li>
-          <a href="https://drive.google.com/file/d/1AUKSm5kkGr1NAnNWtqoIZSdDHn4Kb9M4/view" target="_blank"
-             class="block bg-[#1a1a1c] p-4 rounded-lg border border-gray-800 hover:border-amber-400/40 hover:bg-[#1f1f22] transition">
-            <h3 class="text-lg font-medium text-gray-200">Frontend & Backend, React.js, MySQL, Postman (Full Stack Engineer)</h3>
-          </a>
-        </li>
-        <li>
-          <a href="https://drive.google.com/file/d/1YV1ejhP6Dq7D9ZuOaOqdk83HFsXtU1ap/view?usp=sharing" target="_blank"
-             class="block bg-[#1a1a1c] p-4 rounded-lg border border-gray-800 hover:border-amber-400/40 hover:bg-[#1f1f22] transition">
-            <h3 class="text-lg font-medium text-gray-200">Celerates Student Graduates</h3>
-          </a>
-        </li>
-        <li>
-          <a href="https://drive.google.com/file/d/1X85z0GucM8Hr_Uy6aTb0CkXJOOjU9Yps/view" target="_blank"
-             class="block bg-[#1a1a1c] p-4 rounded-lg border border-gray-800 hover:border-amber-400/40 hover:bg-[#1f1f22] transition">
-            <h3 class="text-lg font-medium text-gray-200">Data Science</h3>
-          </a>
-        </li>
-        <li>
-          <a href="https://drive.google.com/file/d/1lZ9s9qKPvdZXd8_48e_tsNTl9Tmqja7_/view" target="_blank"
-             class="block bg-[#1a1a1c] p-4 rounded-lg border border-gray-800 hover:border-amber-400/40 hover:bg-[#1f1f22] transition">
-            <h3 class="text-lg font-medium text-gray-200">The Most Diligent Student Program: Web & UI/UX</h3>
-          </a>
-        </li>
-        <li>
-          <a href="https://drive.google.com/file/d/1q0tgkUqqi03YmVXWTA3ecD5WcaJ8Z_xO/view" target="_blank"
-             class="block bg-[#1a1a1c] p-4 rounded-lg border border-gray-800 hover:border-amber-400/40 hover:bg-[#1f1f22] transition">
-            <h3 class="text-lg font-medium text-gray-200">The Best Micro Project Program: Web & UI/UX</h3>
-          </a>
-        </li>
-        <li>
-          <a href="https://drive.google.com/file/d/1zeRm-wiOg62FBHLEeK_A4s7YxIwwPKN_/view" target="_blank"
-             class="block bg-[#1a1a1c] p-4 rounded-lg border border-gray-800 hover:border-amber-400/40 hover:bg-[#1f1f22] transition">
-            <h3 class="text-lg font-medium text-gray-200">Committee Closing Event</h3>
-          </a>
-        </li>
-      </ol>
+
+  <div class="max-w-7xl mx-auto px-4">
+  
+  <!-- Title -->
+   <div class="text-center mb-14">
+    <h3 class="text-3xl font-semibold text-amber-400">Certificates</h3>
+      <p class="text-gray-400 mt-3 text-sm">
+      Professional certifications in Web Development, Data, UI/UX and Programming
+      </p>
     </div>
-  </section>  
+  
+  
+  <!-- GRID -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  
+  
+  <!-- 1 -->
+        <a href="https://drive.google.com/file/d/1qjC-B0QNBofWfjOdhOKyl7ZXicqSo8-w/view?usp=sharing"
+          target="_blank"
+          class="group bg-[#141416] p-6 rounded-xl border border-gray-800 hover:border-amber-400/40 hover:shadow-lg hover:shadow-amber-400/10 transition">
+          
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-2xl">💻</span>
+          <span class="text-xs bg-blue-400/20 text-blue-300 px-2 py-1 rounded">Programming</span>
+        </div>
+        
+          <h4 class="text-lg font-semibold text-gray-200 group-hover:text-amber-400">
+          Junior Web Programmer
+          </h4>
+          
+          <p class="text-gray-400 text-sm mt-2">
+          Certification of competency in web programming development.
+          </p>
+          
+          <div class="text-xs text-gray-500 mt-4">
+          View Certificate →
+          </div>
+        </a>
+        
+        <!-- 2 -->
+        <a href="https://drive.google.com/file/d/1FRsltJwuELL9410Ubvc-Ji6bK9Qybepm/view"
+          target="_blank"
+          class="group bg-[#141416] p-6 rounded-xl border border-gray-800 hover:border-amber-400/40 hover:shadow-lg hover:shadow-amber-400/10 transition">
+          
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-2xl">🎨</span>
+          <span class="text-xs bg-purple-400/20 text-purple-300 px-2 py-1 rounded">Design</span>
+        </div>
+        
+          <h4 class="text-lg font-semibold text-gray-200 group-hover:text-amber-400">
+          Graphic Designer UI/UX
+          </h4>
+          
+          <p class="text-gray-400 text-sm mt-2">
+          User interface and user experience design fundamentals.
+          </p>
+          
+          <div class="text-xs text-gray-500 mt-4">
+          View Certificate →
+          </div>
+        </a>
+  
+  <!-- 3 -->
+        <a href="https://drive.google.com/file/d/18hHwIzZP3yibOcCd8TVqmtTwwXPKuIxx/view"
+          target="_blank"
+          class="group bg-[#141416] p-6 rounded-xl border border-gray-800 hover:border-amber-400/40 hover:shadow-lg hover:shadow-amber-400/10 transition">
+          
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-2xl">⚡</span>
+            <span class="text-xs bg-yellow-400/20 text-yellow-300 px-2 py-1 rounded">JavaScript</span>
+          </div>
+          
+          <h4 class="text-lg font-semibold text-gray-200 group-hover:text-amber-400">
+          Workshop JavaScript
+          </h4>
+          
+          <p class="text-gray-400 text-sm mt-2">
+          Hands-on training for modern JavaScript development.
+          </p>
+          
+          <div class="text-xs text-gray-500 mt-4">
+          View Certificate →
+          </div>
+        </a>
+        
+        <!-- 4 -->
+        <a href="https://drive.google.com/file/d/1mGciuG-b5TqzAH3I9Qi0sj0IB_rgbv6K/view"
+          target="_blank"
+          class="group bg-[#141416] p-6 rounded-xl border border-gray-800 hover:border-amber-400/40 hover:shadow-lg hover:shadow-amber-400/10 transition">
+          
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-2xl">🌐</span>
+          <span class="text-xs bg-blue-400/20 text-blue-300 px-2 py-1 rounded">Web</span>
+        </div>
+        
+          <h4 class="text-lg font-semibold text-gray-200 group-hover:text-amber-400">
+          Fundamental Web Programming
+          </h4>
+          
+          <p class="text-gray-400 text-sm mt-2">
+          Core concepts of modern web development.
+          </p>
+          
+          <div class="text-xs text-gray-500 mt-4">
+          View Certificate →
+          </div>
+        </a>
+  
+  <!-- 5 -->
+        <a href="https://drive.google.com/file/d/1o_QHRtSFwmPHAUr83JLMZ2d2wn0iC7TV/view"
+          target="_blank"
+          class="group bg-[#141416] p-6 rounded-xl border border-gray-800 hover:border-amber-400/40 hover:shadow-lg hover:shadow-amber-400/10 transition">
+          
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-2xl">🧩</span>
+          <span class="text-xs bg-indigo-400/20 text-indigo-300 px-2 py-1 rounded">UI Design</span>
+        </div>
+        
+          <h4 class="text-lg font-semibold text-gray-200 group-hover:text-amber-400">
+          Basic Web Application Design
+          </h4>
+          
+          <p class="text-gray-400 text-sm mt-2">
+          Designing basic web application interface structure.
+          </p>
+          
+          <div class="text-xs text-gray-500 mt-4">
+          View Certificate →
+          </div>
+        
+        </a>
+  
+  <!-- 6 -->
+        <a href="https://drive.google.com/file/d/1P-DycPQ7g-0ZTCGjQpIoaabjKUANA5Rq/view"
+          target="_blank"
+          class="group bg-[#141416] p-6 rounded-xl border border-gray-800 hover:border-amber-400/40 hover:shadow-lg hover:shadow-amber-400/10 transition">
+          
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-2xl">🗄️</span>
+          <span class="text-xs bg-green-400/20 text-green-300 px-2 py-1 rounded">Database</span>
+        </div>
+        
+          <h4 class="text-lg font-semibold text-gray-200 group-hover:text-amber-400">
+          SQL Server For Intermediate
+          </h4>
+          
+          <p class="text-gray-400 text-sm mt-2">
+          Intermediate level database query and management.
+          </p>
+          
+          <div class="text-xs text-gray-500 mt-4">
+          View Certificate →
+          </div>  
+        </a>
+  
+  <!-- 7 -->
+        <a href="https://drive.google.com/file/d/1uXcY_ViLehAOB-snEO7o2JKTSM-rYwzt/view"
+          target="_blank"
+          class="group bg-[#141416] p-6 rounded-xl border border-gray-800 hover:border-amber-400/40 hover:shadow-lg hover:shadow-amber-400/10 transition">
+          
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-2xl">🐹</span>
+          <span class="text-xs bg-teal-400/20 text-teal-300 px-2 py-1 rounded">Backend</span>
+        </div>
+        
+        <h4 class="text-lg font-semibold text-gray-200 group-hover:text-amber-400">
+        GO-LANG For Intermediate
+        </h4>
+        
+        <p class="text-gray-400 text-sm mt-2">
+        Backend programming using Go language.
+        </p>
+        
+        <div class="text-xs text-gray-500 mt-4">
+        View Certificate →
+        </div>
+      </a>
+  
+  
+  <!-- 8 -->
+        <a href="https://drive.google.com/file/d/1T_STUAnit38478_tgkIaiONrWPDKxPgX/view"
+          target="_blank"
+          class="group bg-[#141416] p-6 rounded-xl border border-gray-800 hover:border-amber-400/40 hover:shadow-lg hover:shadow-amber-400/10 transition">
+          
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-2xl">🧱</span>
+          <span class="text-xs bg-gray-400/20 text-gray-300 px-2 py-1 rounded">Portfolio</span>
+        </div>
+        
+          <h4 class="text-lg font-semibold text-gray-200 group-hover:text-amber-400">
+          Creating Portfolio Web Footer
+          </h4>
+          
+          <p class="text-gray-400 text-sm mt-2">
+          Portfolio development for modern websites.
+          </p>
+          
+          <div class="text-xs text-gray-500 mt-4">
+          View Certificate →
+          </div> 
+        </a>
+  
+  
+  <!-- 9 -->
+        <a href="https://drive.google.com/file/d/1AUKSm5kkGr1NAnNWtqoIZSdDHn4Kb9M4/view"
+          target="_blank"
+          class="group bg-[#141416] p-6 rounded-xl border border-gray-800 hover:border-amber-400/40 hover:shadow-lg hover:shadow-amber-400/10 transition">
+          
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-2xl">🎓</span>
+          <span class="text-xs bg-orange-400/20 text-orange-300 px-2 py-1 rounded">Program</span>
+        </div>
+        
+          <h4 class="text-lg font-semibold text-gray-200 group-hover:text-amber-400">
+          MSIB Batch 6
+          </h4>
+          
+          <p class="text-gray-400 text-sm mt-2">
+          Certified internship & independent study program.
+          </p>
+          
+          <div class="text-xs text-gray-500 mt-4">
+          View Certificate →
+          </div>
+        </a>
+  
+  
+  <!-- 10 -->
+        <a href="https://drive.google.com/file/d/1X85z0GucM8Hr_Uy6aTb0CkXJOOjU9Yps/view"
+          target="_blank"
+          class="group bg-[#141416] p-6 rounded-xl border border-gray-800 hover:border-amber-400/40 hover:shadow-lg hover:shadow-amber-400/10 transition">
+          
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-2xl">📊</span>
+          <span class="text-xs bg-green-400/20 text-green-300 px-2 py-1 rounded">Data</span>
+        </div>
+        
+          <h4 class="text-lg font-semibold text-gray-200 group-hover:text-amber-400">
+          Data Science</h4>
+        
+          <p class="text-gray-400 text-sm mt-2">
+          Fundamentals of data analysis and machine learning.</p>
+        
+          <div class="text-xs text-gray-500 mt-4">
+          View Certificate →</div>
+        </a>
+
+  <!-- 11 -->
+        <a href="https://drive.google.com/file/d/1YV1ejhP6Dq7D9ZuOaOqdk83HFsXtU1ap/view?usp=sharing"
+          target="_blank"
+          class="group bg-[#141416] p-6 rounded-xl border border-gray-800 hover:border-amber-400/40 hover:shadow-lg hover:shadow-amber-400/10 transition">
+
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-2xl">🚀</span>
+          <span class="text-xs bg-indigo-400/20 text-indigo-300 px-2 py-1 rounded">Achievement</span>
+        </div>
+
+          <h4 class="text-lg font-semibold text-gray-200 group-hover:text-amber-400">
+          Celerates Student Graduates</h4>
+
+          <p class="text-gray-400 text-sm mt-2">
+          Recognition for successful completion of Celerates development program.</p>
+
+          <div class="text-xs text-gray-500 mt-4">
+          View Certificate →</div>
+        </a>
+
+
+<!-- 12 -->
+        <a href="https://drive.google.com/file/d/1lZ9s9qKPvdZXd8_48e_tsNTl9Tmqja7_/view"
+          target="_blank"
+          class="group bg-[#141416] p-6 rounded-xl border border-gray-800 hover:border-amber-400/40 hover:shadow-lg hover:shadow-amber-400/10 transition">
+
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-2xl">🏆</span>
+          <span class="text-xs bg-yellow-400/20 text-yellow-300 px-2 py-1 rounded">Award</span>
+        </div>
+
+          <h4 class="text-lg font-semibold text-gray-200 group-hover:text-amber-400">
+          Most Diligent Student – Web & UI/UX
+          </h4>
+
+          <p class="text-gray-400 text-sm mt-2">
+          Awarded for outstanding dedication during Web & UI/UX program.
+          </p>
+
+          <div class="text-xs text-gray-500 mt-4">
+          View Certificate →
+          </div>
+        </a>
+
+
+<!-- 13 -->
+        <a href="https://drive.google.com/file/d/1q0tgkUqqi03YmVXWTA3ecD5WcaJ8Z_xO/view"
+          target="_blank"
+          class="group bg-[#141416] p-6 rounded-xl border border-gray-800 hover:border-amber-400/40 hover:shadow-lg hover:shadow-amber-400/10 transition">
+
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-2xl">🥇</span>
+          <span class="text-xs bg-amber-400/20 text-amber-300 px-2 py-1 rounded">Best Project</span>
+        </div>
+
+          <h4 class="text-lg font-semibold text-gray-200 group-hover:text-amber-400">Best Micro Project – Web & UI/UX
+        </h4>
+
+          <p class="text-gray-400 text-sm mt-2">Recognition for best micro project achievement.
+        </p>
+
+          <div class="text-xs text-gray-500 mt-4">View Certificate →
+        </div>
+      </a>
+
+
+<!-- 14 -->
+      <a href="https://drive.google.com/file/d/1zeRm-wiOg62FBHLEeK_A4s7YxIwwPKN_/view"
+        target="_blank"
+        class="group bg-[#141416] p-6 rounded-xl border border-gray-800 hover:border-amber-400/40 hover:shadow-lg hover:shadow-amber-400/10 transition">
+
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-2xl">🎤</span>
+          <span class="text-xs bg-gray-400/20 text-gray-300 px-2 py-1 rounded">Event</span>
+      </div>
+
+        <h4 class="text-lg font-semibold text-gray-200 group-hover:text-amber-400">
+        Committee Closing Event – MSIB Batch 6
+        </h4>
+
+        <p class="text-gray-400 text-sm mt-2">
+        Contribution as committee member for MSIB Batch 6 closing event.
+        </p>
+
+        <div class="text-xs text-gray-500 mt-4">View Certificate →</div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+    <!-- ======================= Skills Section ======================= -->
+<section id="skills" class="py-20 bg-[#0a0a0b] border-t border-gray-800">
+
+  <div class="max-w-6xl mx-auto px-6">
+
+    <!-- Title -->
+    <div class="text-center mb-14">
+      <h2 class="text-3xl font-semibold text-amber-400">
+        Technical Skills
+      </h2>
+      <p class="text-gray-400 mt-2 text-sm">
+        Technologies and tools I use to build modern web applications
+      </p>
+    </div>
+
+    <!-- Skills Grid -->
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- React -->
+      <div class="bg-[#141416] p-6 rounded-xl border border-gray-800 hover:border-blue-500/40 transition">
+        <div class="flex justify-between mb-2">
+          <span class="flex items-center gap-2 text-gray-200 font-medium">
+            ⚛️ React
+          </span>
+          <span class="text-sm text-gray-400">85%</span>
+        </div>
+
+        <div class="w-full h-2 bg-gray-800 rounded-full">
+          <div class="h-2 bg-blue-500 rounded-full" style="width:85%"></div>
+        </div>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="bg-[#141416] p-6 rounded-xl border border-gray-800 hover:border-yellow-500/40 transition">
+        <div class="flex justify-between mb-2">
+          <span class="flex items-center gap-2 text-gray-200 font-medium">
+            🟨 JavaScript
+          </span>
+          <span class="text-sm text-gray-400">80%</span>
+        </div>
+
+        <div class="w-full h-2 bg-gray-800 rounded-full">
+          <div class="h-2 bg-yellow-500 rounded-full" style="width:80%"></div>
+        </div>
+      </div>
+
+      <!-- Tailwind & Bootstrap -->
+      <div class="bg-[#141416] p-6 rounded-xl border border-gray-800 hover:border-cyan-500/40 transition">
+        <div class="flex justify-between mb-2">
+          <span class="flex items-center gap-2 text-gray-200 font-medium">
+            🎨 Tailwind & Bootstrap
+          </span>
+          <span class="text-sm text-gray-400">80%</span>
+        </div>
+
+        <div class="w-full h-2 bg-gray-800 rounded-full">
+          <div class="h-2 bg-cyan-500 rounded-full" style="width:80%"></div>
+        </div>
+      </div>
+
+      <!-- MySQL -->
+      <div class="bg-[#141416] p-6 rounded-xl border border-gray-800 hover:border-orange-500/40 transition">
+        <div class="flex justify-between mb-2">
+          <span class="flex items-center gap-2 text-gray-200 font-medium">
+            🗄️ MySQL
+          </span>
+          <span class="text-sm text-gray-400">85%</span>
+        </div>
+
+        <div class="w-full h-2 bg-gray-800 rounded-full">
+          <div class="h-2 bg-orange-500 rounded-full" style="width:85%"></div>
+        </div>
+      </div>
+
+      <!-- REST API -->
+      <div class="bg-[#141416] p-6 rounded-xl border border-gray-800 hover:border-indigo-500/40 transition">
+        <div class="flex justify-between mb-2">
+          <span class="flex items-center gap-2 text-gray-200 font-medium">
+            🔗 REST API
+          </span>
+          <span class="text-sm text-gray-400">80%</span>
+        </div>
+
+        <div class="w-full h-2 bg-gray-800 rounded-full">
+          <div class="h-2 bg-indigo-500 rounded-full" style="width:80%"></div>
+        </div>
+      </div>
+
+      <!-- Machine Learning -->
+      <div class="bg-[#141416] p-6 rounded-xl border border-gray-800 hover:border-purple-500/40 transition">
+        <div class="flex justify-between mb-2">
+          <span class="flex items-center gap-2 text-gray-200 font-medium">
+            🤖 Machine Learning
+          </span>
+          <span class="text-sm text-gray-400">75%</span>
+        </div>
+
+        <div class="w-full h-2 bg-gray-800 rounded-full">
+          <div class="h-2 bg-purple-500 rounded-full" style="width:75%"></div>
+        </div>
+      </div>
+
+      <!-- Figma -->
+      <div class="bg-[#141416] p-6 rounded-xl border border-gray-800 hover:border-pink-500/40 transition">
+        <div class="flex justify-between mb-2">
+          <span class="flex items-center gap-2 text-gray-200 font-medium">
+            🎯 Figma
+          </span>
+          <span class="text-sm text-gray-400">80%</span>
+        </div>
+
+        <div class="w-full h-2 bg-gray-800 rounded-full">
+          <div class="h-2 bg-pink-500 rounded-full" style="width:80%"></div>
+        </div>
+      </div>
+
+      <!-- Canva -->
+      <div class="bg-[#141416] p-6 rounded-xl border border-gray-800 hover:border-green-500/40 transition">
+        <div class="flex justify-between mb-2">
+          <span class="flex items-center gap-2 text-gray-200 font-medium">
+            🖌️ Canva
+          </span>
+          <span class="text-sm text-gray-400">85%</span>
+        </div>
+
+        <div class="w-full h-2 bg-gray-800 rounded-full">
+          <div class="h-2 bg-green-500 rounded-full" style="width:85%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
 
   <!-- Contact -->
 <section id="contact" class="py-20 bg-[#0a0a0b] text-center border-t border-gray-800">
